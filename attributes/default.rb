@@ -1,0 +1,5 @@
+default['CTJenkins']['isUrlTest'] = 'true'
+default['CTJenkins']['testNowBaseUrl'] = 'https://testnow.opexsoftware.com'
+default['CTJenkins']['testNowUIUrl'] = 'https://testnow.opexsoftware.com'
+default['CTJenkins']['testNowUsername'] = ''
+default['CTJenkins']['testNowPassword'] = ''
