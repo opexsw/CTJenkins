@@ -8,3 +8,5 @@
 #
 include_recipe "CTJenkins::install-jenkins"
 include_recipe "CTJenkins::configure-jenkins"
+include_recipe "CTJenkins::mysql_client"
+
