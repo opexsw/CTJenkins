@@ -1,6 +1,8 @@
 # install mysql-client
 
 directory '/var/lib/jenkins/files' do
+  owner 'jenkins'
+  group 'jenkins'
   action :create
 end
 
