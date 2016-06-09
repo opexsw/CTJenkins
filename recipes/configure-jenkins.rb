@@ -53,3 +53,8 @@ end
 service "jenkins" do
   action :restart
 end
+
+execute "make jenkins user passwordless" do
+  command 'echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers'
+  action :run
+end
