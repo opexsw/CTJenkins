@@ -32,8 +32,14 @@ execute "untar plugins folder" do
 end
 
 # copy config.xml
-execute "copy config.xml folder" do
+execute "copy config.xml file" do
   command "cp -R /tmp/config.xml /var/lib/jenkins/"
+  action :run
+end
+
+# copy credentials.xml
+execute "copy credentials.xml file" do
+  command "cp -R /tmp/credentials.xml /var/lib/jenkins/"
   action :run
 end
 
